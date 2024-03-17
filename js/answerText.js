@@ -134,10 +134,12 @@ currDef = definitions[termIndex];
 
 // Interacting with website starts here.
 let runAfterDelay = (fn, delay) => new Promise((resolve, reject) => {
+
     setTimeout(() => {
         fn()
         resolve()
     }, delay)
+
 })
 
 inputParentEl = document.getElementsByClassName("AssemblyInput")[0];
